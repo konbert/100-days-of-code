@@ -10,7 +10,7 @@
 
 // Defining favorite song
 var artist = "Abba";
-var genre  = "pop";
+var genre  = "Pop";
 var title  = "The Winner Takes it All";
 var album  = "Super Trouper";
 var released = 1980;
@@ -33,6 +33,7 @@ console.log("Genre:      " + genre);
 console.log("Album:      " + album);
 console.log("Released:   " + released);
 console.log("Length:     " + length);
-console.log("Writers:    " + writers);
+console.log("Writers:   ", writers);
 console.log("Number One: " + noOne)
-console.log("Charts:     " + charts);
+console.log("Charts:    ", charts);
+
