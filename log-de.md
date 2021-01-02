@@ -7,8 +7,9 @@
 
 **Gedanken:** Das fällt mir nicht wirklich schwer, da ich ja bereits Erfahrung habe. Komisch, dass man nicht weiter machen kann, erst muss die Hausaufgabe bewerted sein.
 
-**Link zur Arbeit:** - [ES 6 / Data Types](https://www.pirple.com/courses/take/keeping-up-with-the-javascripts-part-1/lessons/5724456-lecture-booleans)
-- [song.js](source/song.js)
+**Link zur Arbeit:** 
+- [ES 6 / Data Types](https://www.pirple.com/courses/take/keeping-up-with-the-javascripts-part-1/lessons/5724456-lecture-booleans)
+- [song.js](source/es6/song.js)
 
 ### Tag 1: 21. Februar 2016
 ##### (lösche mich oder kommentiere mich aus)
