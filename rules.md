@@ -23,6 +23,6 @@ January 1st, 2021.
 
 ## Contents
 * [Rules](rules.md)
-* [Log - click here to see my progress](log.md)
+* [Log - click here to see my progress](log-de.md)
 * [FAQ](FAQ.md)
 * [Resources](resources.md)
