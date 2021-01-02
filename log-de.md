@@ -1,7 +1,7 @@
 # 100 Days Of Code - Logbuch
 
-### Tag 0: 1. Januar 2021
-##### (lösche oder kommentiere mich aus)
+### Tag 1: 1. Januar 2021
+//##### (lösche oder kommentiere mich aus)
 
 **Heutiger Task**: Das Kapitel Data-Types der Pirple ES6-Schulung durcharbeiten
 
@@ -11,14 +11,12 @@
 - [ES 6 / Data Types](https://www.pirple.com/courses/take/keeping-up-with-the-javascripts-part-1/lessons/5724456-lecture-booleans)
 - [song.js](source/es6/song.js)
 
-### Tag 1: 21. Februar 2016
-##### (lösche mich oder kommentiere mich aus)
+### Tag 2: 2. Januar 2021
 
-**Heutiger Fortschritt**: CSS Korrektur, Arbeit an der Canvas Funktionalität der App.
+**Heutiger Fortschritt**: Kapitel Variables and
+ Constants durchgearbeitet.
+**Gedanken:** Das ist mal eine blöde Hausaufgabe, einen Text schreiben. Damit habe ich wirklich nicht gerechnet.
 
-**Gedanken:** Ich habe mich wirklich schwer getan mit CSS/ wirklich mit CSS gekämpft, aber alles in allem habe ich das Gefühl, ich werde langsam besser darin. Canvas ist noch immer Neuland für mich, aber ich habe es geschafft einen Teil der grundlegenden Funktionalität zu verstehen.
-
-**Link zur Arbeit:** [Taschenrechner App](http://www.example.com)
 
 
 ### Tag 1: Montag, 27. Juni (Beispiel 2)
