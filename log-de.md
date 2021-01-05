@@ -17,7 +17,16 @@
  Constants durchgearbeitet.
 **Gedanken:** Das ist mal eine blöde Hausaufgabe, einen Text schreiben. Damit habe ich wirklich nicht gerechnet.
 
+### Tag 3: 3. Januar 2021
 
+**Heutiger Fortschritt**: Kapitel If-statments durchgearbeitet und mich mit den Anfängen von node.js beschäftigt.
+**Gedanken:** Das ist mal eine blöde Hausaufgabe, einen Text schreiben. Damit habe ich wirklich nicht gerechnet.
+
+### Tag 4: 4. Januar 2021
+
+**Heutiger Fortschritt**: Nicht viel gremacht, bin mit Sven zum Auto-ansehen gefahren. Später dann noch ein wenig node.js und ES6 gemcaht,
+aber nicht mehr viel.
+**Gedanken:** 
 
 ### Tag 1: Montag, 27. Juni (Beispiel 2)
 
