@@ -17,7 +17,34 @@
  Constants durchgearbeitet.
 **Gedanken:** Das ist mal eine blöde Hausaufgabe, einen Text schreiben. Damit habe ich wirklich nicht gerechnet.
 
+### Tag 3: 3. Januar 2021
 
+**Heutiger Fortschritt**: Kapitel If-statments durchgearbeitet und mich mit den Anfängen von node.js beschäftigt.
+**Gedanken:** Das ist mal eine blöde Hausaufgabe, einen Text schreiben. Damit habe ich wirklich nicht gerechnet.
+
+### Tag 4: 4. Januar 2021
+
+**Heutiger Fortschritt**: Nicht viel gremacht, bin mit Sven zum Auto-ansehen gefahren. Später dann noch ein wenig node.js und ES6 gemcaht,
+aber nicht mehr viel.
+
+### Tag 5: 5. Januar 2021
+
+**Heutiger Fortschritt**: Die Hausaufgabe für Funktionen gemacht (homework 4)
+
+### Tag 6: 6. Januar 2021
+
+**Heutiger Fortschritt**: Das Kapitel Funktionen weiter bearbeitet
+
+
+### Tag 7: 7. Januar 2021
+
+**Heutiger Fortschritt**: Das Kapitel Funktionen weiter bearbeitet. 
+**Gedanken:**: das ist aber wirklich ein langwieriges und langweiliges Ding.  
+
+### Tag 8: 8. Januar 2021
+
+**Heutiger Fortschritt**: Kapitel Funktionen endlich beendet und das Kapitel Switch-Statements incl Hausaufgabe (homework 5) beendet. 
+**Gedanken:**: Endlich bin ich die Funktionen los, eine große Erleichterung. Die Hausaufgabe war komplizierter als erwartet, aber letzen Endes hat es Spaß gemacht.
 
 ### Tag 1: Montag, 27. Juni (Beispiel 2)
 
