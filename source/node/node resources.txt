@@ -1,0 +1,104 @@
+Want to learn Node.js in 2021?
+
+Here are some awesome free resources for youThreadDown pointing backhand index
+6:26 AM · Jan 8, 2021·Twitter Web App
+400
+ Retweets
+14
+ Quote Tweets
+1.4K
+ Likes
+Nirbhay Vashisht
+@nirbhayvashisht
+·
+10h
+Replying to 
+@nirbhayvashisht
+1. YouTube tutorials
+High voltage sign Node.js Crash Course Tutorial by The Net Ninja
+https://youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU
+
+High voltage sign Node.js Tutorial for Beginners: Learn Node in 1 Hour by Mosh
+https://youtube.com/watch?v=TlB_eWDSMt4&feature=youtu.be&ab_channel=ProgrammingwithMosh
+
+High voltage sign Node.js Crash Course by Traversy Media
+https://youtube.com/watch?v=fBNz5xF-Kx4&feature=youtu.be&ab_channel=TraversyMedia
+Nirbhay Vashisht
+@nirbhayvashisht
+·
+10h
+High voltage sign Node JS Crash Course by The Dev Ed
+https://youtube.com/watch?v=zQRrXTSkvfw&feature=youtu.be&ab_channel=DevEd
+
+High voltage sign The Complete Node.js Developer Course by Andrew Mead
+https://youtube.com/playlist?list=PL9-zmnPt-ia-0SOfmeNZWLiHG0fnONs2P
+
+High voltage sign Node.js Tutorials for Beginners by thenewboston
+https://youtube.com/playlist?list=PL6gx4Cwl9DGBMdkKFn3HasZnnAqVjzHn_
+Nirbhay Vashisht
+@nirbhayvashisht
+·
+10h
+High voltage sign Introduction to Node.js with Ryan Dahl, the creator of node
+Introduction to Node.js with Ryan Dahl
+Node.js is a system for building network services for Google's V8 JavaScript engine. In this presentation Ryan Dahl, the man behind Node.js will introduce yo...
+youtube.com
+Nirbhay Vashisht
+@nirbhayvashisht
+·
+10h
+2. Hands-On Workshop
+
+High voltage sign Learnyounode (my favorite)
+https://github.com/workshopper/learnyounode
+
+High voltage sign freeCodeCamp's API's and Microservices Certification
+https://freecodecamp.org/learn/
+Nirbhay Vashisht
+@nirbhayvashisht
+·
+10h
+3. Written Tutorials/Guides
+
+High voltage sign signArt of node 
+https://github.com/maxogden/art-of-node/#the-art-of-node
+
+High voltage sign 30 Days of Node
+https://nodejsera.com/30-days-of-node.html
+
+High voltage sign Official Documentation
+https://nodejs.dev/learn
+
+High voltage sign Node.js Tutorial – Learn basics of Node.js by tutorialkart
+https://tutorialkart.com/nodejs/nodejs-tutorial/
+Nirbhay Vashisht
+@nirbhayvashisht
+·
+10h
+High voltage sign Node Hero - Getting Started With Node.js Tutorial by risingstack
+https://tutorialkart.com/nodejs/nodejs-tutorial/
+
+High voltage sign Introduction to Node JS – Node.js Basics by journeldev
+https://journaldev.com/7397/introduction-to-node-js-basics
+Nirbhay Vashisht
+@nirbhayvashisht
+·
+10h
+4. Project Tutorials
+
+High voltage sign Node.js App From Scratch | Express, MongoDB & Google OAuth by Traversy Media
+https://youtube.com/watch?v=SBvmnHTQIPY&feature=youtu.be&ab_channel=TraversyMedia
+
+High voltage sign Build a Zoom Clone with Node JS for Beginners by Clever Programmer
+https://youtube.com/watch?v=ZVznzY7EjuY&feature=youtu.be&ab_channel=CleverProgrammer
+
+Happy Coding Man technologistTechnologistWoman technologist
+Nirbhay Vashisht
+@nirbhayvashisht
+·
+7h
+Also, Check out http://glitch.com, where anyone can code a full-stack node app right from their browser, instantly.
+
+Btw, Follow me for more programming/JavaScript content.
+
+Happy CodingWoman technologistTechnologistMan technologistRed heart
