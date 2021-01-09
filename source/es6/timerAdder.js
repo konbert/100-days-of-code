@@ -94,7 +94,7 @@ function timeAdder (value1, label1, value2, label2) {
 
 console.log(timeAdder(5,"hour",5,"minutes")); // This is impossible because "hour" is singular and 5 is plural
 
-console.log(timeAdder(false,false,5,"minutes")); // This is invalid because the first 2 arguments are not the correct types
+console.log(timeAdder(9,false,5,"minutes")); // This is invalid because the first 2 arguments are not the correct types
 
 console.log(timeAdder({},"days",5,"minutes")); // This is invalid because the first argument is the wrong type
 
