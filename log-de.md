@@ -46,6 +46,11 @@ aber nicht mehr viel.
 **Heutiger Fortschritt**: Kapitel Funktionen endlich beendet und das Kapitel Switch-Statements incl Hausaufgabe (homework 5) beendet. 
 **Gedanken:**: Endlich bin ich die Funktionen los, eine große Erleichterung. Die Hausaufgabe war komplizierter als erwartet, aber letzen Endes hat es Spaß gemacht.
 
+### Tag 9: 9. Januar 2021
+
+**Heutiger Fortschritt**: Kapitel Loops beendet. 
+**Gedanken:**: Hausaufgabe war FizzBuzz .. kommt wohl immer wieder vor und ist dabei doch gar nicht so kompliziert.
+
 ### Tag 1: Montag, 27. Juni (Beispiel 2)
 
 **Heutiger Fortschritt**: Ich bin einige Übungen auf freeCodeCamp durchgegangen.
