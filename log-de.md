@@ -51,6 +51,17 @@ aber nicht mehr viel.
 **Heutiger Fortschritt**: Kapitel Loops beendet. 
 **Gedanken:**: Hausaufgabe war FizzBuzz .. kommt wohl immer wieder vor und ist dabei doch gar nicht so kompliziert.
 
+### Tag 10: 10. Januar 2021
+
+**Heutiger Fortschritt**: Mit den Browser Dev Tools gespielt.
+
+- [CTRL] - [SHIFT] + i
+- [CTRL] - [SHIFT] + j
+
+### Tag 11: 11. Januar 2021
+
+**Heutiger Fortschritt**: Kapitel DOM angefangen, das wird eine weile Dauern.
+
 ### Tag 1: Montag, 27. Juni (Beispiel 2)
 
 **Heutiger Fortschritt**: Ich bin einige Übungen auf freeCodeCamp durchgegangen.
