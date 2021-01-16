@@ -1,0 +1,45 @@
+<html>
+<head><title>Best colors ever!</title></head>
+<style>
+	.rectangle {
+		background-color: grey;
+		height: 75px;
+		width: 75px;
+	}
+	.wrapper {
+		padding-top: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+</style>
+<body>
+	<h1>Best colors ever!</h1>
+	<h2>Below you can see the best colors for every use-case.</h2>
+
+	<div class= "wrapper" id="rectangleWrapper">
+		<div class="rectangle" id="FFC300" style="background-color:#FFC300"></div>#FFC300
+		<div class="rectangle" id="FF5733" style="background-color:#FF5733"></div>#FF5733
+		<div class="rectangle" id="C70039" style="background-color:#C70039"></div>#C70039
+		<div class="rectangle" id="900C3F" style="background-color:#900C3F"></div>#900C3F
+		<div class="rectangle" id="581845" style="background-color:#581845"></div>#581845
+		<div class="rectangle" id="04266C" style="background-color:#04266C"></div>#04266C
+		<div class="rectangle" id="0448CF" style="background-color:#0448CF"></div>#0448CF
+		<div class="rectangle" id="97AFDE" style="background-color:#97AFDE"></div>#97AFDE
+		<div class="rectangle" id="B3DE97" style="background-color:#B3DE97"></div>#B3DE97
+		<div class="rectangle" id="DE97DD" style="background-color:#DE97DD"></div>#DE97DD
+	</div>
+
+
+</body>
+</html>
+<script>
+
+console.log("Here are the rectangle IDs")
+const rectangles = document.querySelectorAll(".rectangle");
+for (const rect of rectangles) {
+	console.log(rect.id);
+}
+
+
+</script>

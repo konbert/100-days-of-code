@@ -1,0 +1,67 @@
+<html>
+<head></head>
+<style>
+	.orange {
+		background-color: orange;
+		height: 100px;
+		width: 100px;
+	}
+	.purple {
+		background-color: purple;
+		height: 100px;
+		width: 100px;
+		border-radius: 20%;
+	}
+	.foo {
+		border-radius: 10%;
+	}
+</style>
+<body>
+
+	<div class="orange"></div>
+	<div class="purple foo"></div>
+	<div class="orange"></div>
+
+	<div id="created"></div>
+
+
+</body>
+</html>
+<script>
+const myStorage = window.localStorage;
+
+/*
+localStorage.setItem("MyString", "Help");
+localStorage.setItem("myNumber", 3.145);
+localStorage.setItem("myArray", [1,2,3,4,5]);
+*/
+
+const myString = localStorage.getItem("MyString");
+console.log(myString);
+
+const myNumber =  localStorage.getItem("myNumer");
+console.log(myNumber)
+
+const myArray = localStorage.getItem("myArray");
+console.log(myArray[2]);
+
+/*	
+const purpleDiv = document.querySelector(".purple");
+purpleDiv.style.backgroundColor="purple";
+purpleDiv.style.height = "100px";
+purpleDiv.style.width  = "100px";
+*/
+
+const orangeDivs = document.querySelectorAll(".orange");
+for (const div of orangeDivs) {
+	console.log(div);
+	div.classList.add("foo");
+}
+
+const creationDiv = document.getElementById("created");
+const newElement = document.createElement("P");
+newElement.innerText = "I was created by SCIENCE!";
+console.log(newElement);
+creationDiv.appendChild(newElement);
+
+</script>
