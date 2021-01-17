@@ -62,6 +62,27 @@ aber nicht mehr viel.
 
 **Heutiger Fortschritt**: Kapitel DOM angefangen, das wird eine weile Dauern.
 
+### Tag 15: 15. Januar 2021
+
+**Heutiger Fortschritt**: Kapitel DOM beendet und die Hausaufgabe erledigt.
+
+**Link zur Arbeit**:
+- [homework7.html](source/es6/homework7.html)
+ 
+### Tag 16: 16. Januar 2021
+
+**Heutiger Fortschritt**: Kapitel Events begonnen, das klingt schon ziemlich vielversprechend.
+
+### Tag 17: 17. Januar 2021
+
+**Heutiger Fortschritt**: Kapitel Events bearbeitet und eine Form-Test Datei erstellt, coole Sache.
+
+**Gedanken** Ich kann mit trotzdem noch nicht vorstellen, dass ich in der Lage sein soll, das erste Projekt zu bearbeiten.
+
+**Link zur Arbeit**:
+- [form_test.html](source/es6/form_test.html)
+
+
 ### Tag 1: Montag, 27. Juni (Beispiel 2)
 
 **Heutiger Fortschritt**: Ich bin einige Übungen auf freeCodeCamp durchgegangen.
