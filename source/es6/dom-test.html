@@ -63,5 +63,8 @@ const newElement = document.createElement("P");
 newElement.innerText = "I was created by SCIENCE!";
 console.log(newElement);
 creationDiv.appendChild(newElement);
+newElement.addEventListener("click", function(){
+	alert("Ding Dong!");
+})
 
 </script>
