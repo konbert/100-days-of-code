@@ -1,0 +1,27 @@
+.tictactoe #GameBoard {
+  width: 60vmin;
+  height: 60vmin;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.tictactoe button {
+  width:20vmin;
+  height: 20vmin;
+  background: white;
+  border: 1px solid black;
+  margin: 0;
+  font-weight: bold;
+  font: 0/0 transparent; 
+}
+
+.tictactoe [label="X"] {
+  font-size: 30 ;
+  color: red;
+}
+
+.tictactoe [label="O"] {
+  font-size: 30 ;
+  color: black;
+}
