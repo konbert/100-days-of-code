@@ -19,7 +19,6 @@ if ( todoStorage.getObj("users") != null) {
 let lists = [];
 let activeListIndex = -1;
 let newList = false;
-//let todolist = [];
 
 // Login status and user
 let logged_in = false;
@@ -27,29 +26,25 @@ let activeUserIndex = -1;
 let activeUser = {};
 
 // HTML Elements
-const indexElem = document.getElementById("index");
-const menuElem = document.getElementById("menu");
-const loginElem = document.getElementById("login");
-const registerElem = document.getElementById("register");
-const dashboardElem = document.getElementById("dashboard");
+const indexPane = document.getElementById("index");
+const menuPane = document.getElementById("menu");
+const loginPane = document.getElementById("login");
+const registerPane = document.getElementById("register");
+const dashboardPane = document.getElementById("dashboard");
 const dashboardList = document.getElementById("dashboard_list");
-const listElem = document.getElementById("list")
+const listPane = document.getElementById("list");
 const checkListTable = document.getElementById("check_list_table");
-const settingsElem = document.getElementById("settings");
-const messageElem = document.getElementById("message");
+const userSettingsPane = document.getElementById("settings");
+const messageLine = document.getElementById("message");
 
 // EventListeners
-indexElem.addEventListener("click", logReg);
-menuElem.addEventListener("click", menu);
-loginElem.addEventListener("click", login);
-registerElem.addEventListener("click", registerHandler);
-dashboardElem.addEventListener("click", dashboardHandler);
-listElem.addEventListener("click", listHandler);
-settingsElem.addEventListener("click", settingsHandler)
-
-// Run App
-userlist();
-//saveDemoList();
+indexPane.addEventListener("click", logReg);
+menuPane.addEventListener("click", menu);
+loginPane.addEventListener("click", login);
+registerPane.addEventListener("click", registerHandler);
+dashboardPane.addEventListener("click", dashboardHandler);
+listPane.addEventListener("click", listHandler);
+userSettingsPane.addEventListener("click", settingsHandler)
 
 // functions	
 
@@ -59,59 +54,46 @@ function menu(e) {
 		case "logout":
 			logged_in = false;
 			activeUser = {};
-			// clear data
-			let listItems = dashboardList.querySelectorAll("li");
-			for (let li of listItems) {
-				dashboardList.removeChild(li);
-			}
-			// update site
-			menuElem.setAttribute("hidden", true);
-			dashboardElem.setAttribute("hidden", true);
-			listElem.setAttribute("hidden", true);
-			settingsElem.setAttribute("hidden", true);
-			indexElem.removeAttribute("hidden");
+			menuPane.setAttribute("hidden", true);
+			switchPane(indexPane);
 			break;
 		case "account settings":
-			let fields = settingsElem.querySelectorAll("#settingsForm input");
+			let fields = userSettingsPane.querySelectorAll("#settingsForm input");
 			fields[0].value = activeUser.firstname; 
 			fields[1].value = activeUser.lastname; 
 			fields[2].value = activeUser.email; 
 			fields[3].value = activeUser.pwd;
 
-			settingsElem.removeAttribute("hidden");
-			dashboardElem.setAttribute("hidden", true);
-			listElem.setAttribute("hidden", true);
+			switchPane(userSettingsPane);
 			break;
-		
 	}
 }
 
 // handler function to switch to login or register
 function logReg(e) {
 	switch (e.target.innerText) {
-	case "login":
-		indexElem.setAttribute("hidden", true);
-		loginElem.removeAttribute("hidden");
+	case "Log in":
+		switchPane(loginPane);
 		break;
-	case "register":
-		indexElem.setAttribute("hidden", true);
-		registerElem.removeAttribute("hidden")
+	case "Sign Up":
+		switchPane(registerPane);
 	} 
 }
 
 // handler function for registration form
 function registerHandler(e) {
-	let fields = registerElem.querySelectorAll("#registerForm input");
+	let fields = registerPane.querySelectorAll("#registerForm input");
 	switch (e.target.innerText) {
 	case "register":
-		
 		if ( fields[0].value === "" | 
 			 fields[1].value === "" |
 			 fields[2].value === "" |
 			 fields[3].value === "" ) {
-			messageElem.innerText = "Error - all fields must be filled!";
+			messageLine.innerText = "Error - all fields must be filled!";
+		} else if (!fields[4].checked) {
+			messageLine.innerText = "Error - please agree to the Terms of Use."
 		} else {
-			messageElem.innerText = "";
+			messageLine.innerText = "";
 			// get data from form
 			let newUser = { firstname: fields[0].value, 
 						    lastname: fields[1].value, 
@@ -123,32 +105,29 @@ function registerHandler(e) {
 			todoStorage.setObj("users", users );
 			
 			// update site .. goto login
-			registerElem.setAttribute("hidden", true);
-			loginElem.removeAttribute("hidden");
+			switchPane( loginPane);
 		}
 		break;
 	case "back":
 		for (let i=0; i<4; i++) {
 			fields[i].value = "";
 		}
-		registerElem.setAttribute("hidden", true);
-		indexElem.removeAttribute("hidden");
-		
+		switchPane(indexPane);
 	}
 }
 
 // handler function for registration form
 function settingsHandler(e) {
-	let fields = settingsElem.querySelectorAll("#settingsForm input");
+	let fields = userSettingsPane.querySelectorAll("#settingsForm input");
 	switch (e.target.innerText) {
 	case "save":
 		if ( fields[0].value === "" | 
 			 fields[1].value === "" |
 			 fields[2].value === "" |
 			 fields[3].value === "" ) {
-			messageElem.innerText = "Error - all fields must be filled!";
+			messageLine.innerText = "Error - all fields must be filled!";
 		} else {
-			messageElem.innerText = "";
+			messageLine.innerText = "";
 			// get data from form
 			let myUser = { firstname: fields[0].value, 
 						   lastname: fields[1].value, 
@@ -161,7 +140,6 @@ function settingsHandler(e) {
 			todoStorage.setObj("users", users );
 			
 			// update site .. goto dashboard
-			settingsElem.setAttribute("hidden", true);
 			backToDashboard();
 		}
 		break;
@@ -171,7 +149,6 @@ function settingsHandler(e) {
 		fields[2].value = "";
 		fields[3].value = "";
 
-		settingsElem.setAttribute("hidden", true);
 		backToDashboard();
 		break;
 	}
@@ -182,7 +159,7 @@ function login(e) {
 	if (e.target.innerText === "login") {
 
 		// get data from form
-		let fields = loginElem.querySelectorAll("#loginForm input");
+		let fields = loginPane.querySelectorAll("#loginForm input");
 		if (users != null) {
 			let index=0;
 			// browse user list for user email
@@ -190,7 +167,7 @@ function login(e) {
 				if (u.email === fields[0].value && u.pwd === fields[1].value) {
 					// found user in user list & password matches
 					logged_in = true;
-					messageElem.innerText = "";
+					messageLine.innerText = "";
 					activeUserIndex = index;
 					activeUser = {firstname: u.firstname, lastname: u.lastname, email: u.email, pwd: u.pwd};
 					// delete login form
@@ -201,40 +178,38 @@ function login(e) {
 				index++;
 			}
 			if (!logged_in) {
-				messageElem.innerText = "Login failed :: unknown user or wrong password!";
+				messageLine.innerText = "Login failed :: unknown user or wrong password!";
 			} else {
+				menuPane.removeAttribute("hidden");
+
 				// update site .. goto dashboard
 				populateDashboard();			
-
-				menuElem.removeAttribute("hidden");
 				document.getElementById("active_user").innerText = activeUser.email;
-				loginElem.setAttribute("hidden", true);
-				dashboardElem.removeAttribute("hidden");
+				switchPane(dashboardPane);
 			}
+		} else {
+			messageLine.innerText = "Error - there are no known users, please register."
+			switchPane(indexPane);
 		}
 	}
 }
 
 // handler for click in the dashboard
 function dashboardHandler(e) {
-	if (e.target.innerText === "create new list") {
+	if (e.target.innerText === "Create New to-do List") {
 		// simple case: display emtpy list
 		deleteList();
 		let activeList = document.getElementById("list_name");
 		activeList.value = "";
 		newList = true;
-
-		dashboardElem.setAttribute("hidden", true);
-		listElem.removeAttribute("hidden");
 	} else {
 		if (e.target.type = "li") {
+			// clicked on list item
 			newList = false;
 			populateList(e.target.innerText);
-
-			dashboardElem.setAttribute("hidden", true);
-			listElem.removeAttribute("hidden");
 		}
 	}
+	switchPane(listPane);
 }
 
 // handler for click in the list view
@@ -246,9 +221,9 @@ function listHandler(e) {
 		case "new item":
 			let newItem = document.getElementById("new_item");
 			if (newItem.value === "") {
-				messageElem.innerText = "Error - item must have a text!"
+				messageLine.innerText = "Error - item must have a text!"
 			} else {
-				messageElem.innerText = "";
+				messageLine.innerText = "";
 			
 				appendCheckListTable(newItem.value, false);
 				newItem.value = "";
@@ -259,9 +234,16 @@ function listHandler(e) {
 			// save the actual selected List
 			let listName = document.getElementById("list_name");
 			if (listName.value === "") {
-				messageElem.innerText = "Error - List must have a name!";
+				messageLine.innerText = "Error - List must have a name!";
 			} else {
-				messageElem.innerText = "";
+				for (let list of lists) {
+					if (list.name === listName.value) {
+						messageLine.innerText = "Error - List exists, choose another name.";
+						return;
+					}
+				}
+	
+				messageLine.innerText = "";
 
 				// construct list object from html - table
 				let saveList = { name: listName.value, items: []};
@@ -269,18 +251,15 @@ function listHandler(e) {
 				let childList = checkListTable.querySelectorAll("tr");
 				let index = 0;
 				for (let item of childList) {
-					if (index === 0) {
-						index++;
-					} else {
+					if (index != 0) {
 						let fields = item.querySelectorAll("td");
 						let itemName = fields[1].innerText;
 						let checkBox = fields[0].querySelector("input");
 
 						let newItem = {item: itemName, checked: checkBox.checked};
 						saveList.items.push(newItem);
-
-						index++;
-					}
+					}	
+					index++;
 				}
 				if (newList === true) {
 					lists.push(saveList);
@@ -299,8 +278,7 @@ function listHandler(e) {
 function backToDashboard() {
 	deleteList();
 	populateDashboard();
-	dashboardElem.removeAttribute("hidden");
-	listElem.setAttribute("hidden", true);
+	switchPane(dashboardPane);
 }
 
 // Populate Dashboard with todo lists of active user;
@@ -333,20 +311,18 @@ function deleteList() {
 		if (index != 0) {
 			checkListTable.removeChild(item);
 		}
-		index++
-
+		index++;
 	}
-
 }
 
 // Populate list view with selected todo list
 function populateList(listname) {
 	if (lists === []) {
-		messageElem.innerText = "Error - no list found";
+		messageLine.innerText = "Error - no list found";
 	} else {
 		deleteList();
 		let index = 0;
-		messageElem.innerText = "";
+		messageLine.innerText = "";
 		// find the list in the lists
 		for (let list of lists) {
 			if (list.name === listname) {
@@ -382,22 +358,15 @@ function appendCheckListTable(item, checked) {
 	checkListTable.appendChild(newRow);
 }
 
-// Testfunctions for development
+// switch application pane
+function switchPane(applicationPane) {
+	indexPane.setAttribute("hidden", true);
+	loginPane.setAttribute("hidden", true);
+	registerPane.setAttribute("hidden", true);
+	dashboardPane.setAttribute("hidden", true);
+	listPane.setAttribute("hidden", true);
+	userSettingsPane.setAttribute("hidden", true);
+	messageLine.innerText = "";
 
-function userlist() {
-	let userlist = todoStorage.getObj("users");
-	if (userlist !== null ) {
-		for (let u of userlist) {
-		}
-	}
-}
-
-function saveDemoList() {
-	let newList =  [
-		{name: "test1", items: [ {item:"testitem1", checked: true}, 
-		                         {item:"testitem2", checked: false} ]},
-		{name: "test2", items: [ {item:"testitem3", checked: false},
-		                         {item:"testitem4", checked: false} ]}
-	];
-	todoStorage.setObj("michael.stoeckel@web.de", newList);
+	applicationPane.removeAttribute("hidden");
 }
