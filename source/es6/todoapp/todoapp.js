@@ -237,7 +237,8 @@ function listHandler(e) {
 				messageLine.innerText = "Error - List must have a name!";
 			} else {
 				for (let list of lists) {
-					if (list.name === listName.value) {
+					if (list.name === listName.value & newList |
+						list.name === listName.value & listName.value != lists[activeListIndex].name) {
 						messageLine.innerText = "Error - List exists, choose another name.";
 						return;
 					}
