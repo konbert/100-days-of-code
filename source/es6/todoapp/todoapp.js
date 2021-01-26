@@ -526,6 +526,7 @@ function userSettingsHandler(e) {
 		break;
 	case "back to dashboard":
 		showDashboardPane();
+		populateDashboard();
 		break;
 	}
 }
