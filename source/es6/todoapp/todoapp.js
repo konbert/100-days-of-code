@@ -478,6 +478,7 @@ function menuHandler(e) {
 		case "logout":
 			logged_in = false;
 			activeUser = {};
+			lists = [];
 			menuPane.setAttribute("hidden", true);
 			showIndexPane();
 			break;
