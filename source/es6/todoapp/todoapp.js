@@ -349,11 +349,11 @@ function populateDashboard() {
 // handler for click in the dashboard
 function dashboardHandler(e) {
 	if (e.target.innerText === "Create New to-do List") {
+		showListPane();
 		// simple case: display emtpy list
 		let activeList = document.getElementById("list_name");
 		activeList.value = "";
 		newList = true;
-		showListPane();
 	} else {
 		if (e.target.type = "li") {
 			// clicked on list item
